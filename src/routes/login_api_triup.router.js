@@ -39,7 +39,11 @@ export function createAuthRouter(prisma) {
       const rawToken = data?.access_token;
 
       const token = rawToken
-        ? `${data?.token_type?.toLowerCase() === "bearer" ? "" : data.token_type + " "}${rawToken}`
+        ? `${
+            data?.token_type?.toLowerCase() === "bearer"
+              ? ""
+              : data.token_type + " "
+          }${rawToken}`
         : null;
 
       if (!token) {
