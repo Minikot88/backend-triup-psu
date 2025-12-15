@@ -6,7 +6,10 @@ import { createImportServerFixRouter } from "./triup/import_server_fix.router.js
 import { createImportServerFormRouter } from "./triup/import_server_form.router.js";
 import { createImportServerUserRouter } from "./triup/import_server_user.router.js";
 import { createMasterRouter } from "./db/master.router.js";
-import { createPsuAuthRouter } from "./psu_auth.router.js"; // <--- เพิ่ม
+import { createPsuAuthRouter } from "./psu_auth.router.js";
+import { createPsuUserRouter } from "./db/psu_user.router.js";
+import { createAdminUserRouter } from "./db/admin_user.router.js";
+import { createStatisticsRouter } from "./db/statistics.router.js";
 
 export function mountRouters(app, prisma) {
   const api = Router();
@@ -25,5 +28,12 @@ export function mountRouters(app, prisma) {
   // master tables
   api.use("/master", createMasterRouter(prisma));
 
+  // psu_user tables
+  api.use("/psu_user", createPsuUserRouter(prisma));
+  api.use("/admin", createAdminUserRouter(prisma));
+
+  // statistics
+  api.use("/statistics", createStatisticsRouter(prisma));
+
   app.use("/api", api);
-}
+} 

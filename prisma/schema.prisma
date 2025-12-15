@@ -374,3 +374,12 @@ model users {
   fullname        String? @db.VarChar(255)
   user_pk_uuid    String  @id @db.Uuid
 }
+
+model psu_user_role_log {
+  log_id     String    @id(map: "psu_user_role_log_pk") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id    String?   @db.VarChar
+  old_role   String?   @db.VarChar
+  new_role   String?   @db.VarChar
+  changed_by String?   @db.VarChar
+  changed_at DateTime? @db.Timestamptz(6)
+}
