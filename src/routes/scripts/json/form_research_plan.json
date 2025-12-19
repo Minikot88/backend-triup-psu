@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2025-12-15T09:31:40.123Z",
+  "fetchedAt": "2025-12-19T02:51:28.227Z",
   "key": "form_research_plan",
   "url": "https://triup.tsri.or.th/service/api/form_research_plan",
   "data": {
@@ -4270,9 +4270,9 @@
         "form_plan_result_check": "",
         "form_plan_result_other": "",
         "form_plan_user_result": "ประชาชนผู้ได้รับผลกระทบทางเสียง หน่วยงานภาครัฐ และภาคเอกชนผู้ผลิตและจำหน่าย",
-        "form_plan_status": "ร่างเอกสาร",
-        "form_plan_checked_by": null,
-        "form_plan_checked_date": null,
+        "form_plan_status": "ผ่านการอนุมัติ ",
+        "form_plan_checked_by": 6580,
+        "form_plan_checked_date": "2025-12-18 16:47:15",
         "form_plan_form_own_id": null,
         "form_plan_form_plan_id": null,
         "form_plan_type": null,

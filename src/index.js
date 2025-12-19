@@ -54,7 +54,7 @@ async function bootstrap() {
 
   const port = Number(process.env.PORT) || 8888;
   app.listen(port, () => {
-    console.log(`🚀 API started at http://localhost:${port}`);
+    console.log(`🚀 API started at http://localhost:${port}/api/`);
   });
 
   // Prisma cleanup

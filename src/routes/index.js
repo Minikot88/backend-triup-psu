@@ -11,22 +11,27 @@ import { createPsuUserRouter } from "./db/psu_user.router.js";
 import { createAdminUserRouter } from "./db/admin_user.router.js";
 import { createStatisticsRouter } from "./db/statistics.router.js";
 
+import { createFormNewFindingsRouter } from "./db/form_new_findings.router.js";
+
 export function mountRouters(app, prisma) {
   const api = Router();
 
   api.use("/login-api-triup", createAuthRouter(prisma));
 
   // PSU auth login
-  api.use("/psu_auth", createPsuAuthRouter(prisma)); // → POST /api/psu_auth/login
+  api.use("/psu_auth", createPsuAuthRouter(prisma));
 
   // scripts
-  api.use("/scripts", createFetchAllRouter(prisma)); // ต้องใช้ token
-  api.use("/scripts", createImportServerFixRouter(prisma)); // ไม่ต้อง login
+  api.use("/scripts", createFetchAllRouter(prisma));
+  api.use("/scripts", createImportServerFixRouter(prisma));
   api.use("/scripts", createImportServerFormRouter(prisma));
   api.use("/scripts", createImportServerUserRouter(prisma));
 
   // master tables
   api.use("/master", createMasterRouter(prisma));
+
+  // form new findings
+  api.use("/master", createFormNewFindingsRouter(prisma));
 
   // psu_user tables
   api.use("/psu_user", createPsuUserRouter(prisma));
@@ -36,4 +41,4 @@ export function mountRouters(app, prisma) {
   api.use("/statistics", createStatisticsRouter(prisma));
 
   app.use("/api", api);
-} 
+}

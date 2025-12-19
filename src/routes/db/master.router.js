@@ -196,15 +196,15 @@ export function createMasterRouter(prisma) {
 
   // form_new_findings
   // GET /api/master/form-new-findings
-  router.get(
-    '/form-new-findings',
-    wrap(async (_req, res) => {
-      const rows = await prisma.form_new_findings.findMany({
-        orderBy: { findings_pk_id: 'asc' },
-      });
-      res.json({ success: true, data: rows });
-    }),
-  );
+  // router.get(
+  //   '/form-new-findings',
+  //   wrap(async (_req, res) => {
+  //     const rows = await prisma.form_new_findings.findMany({
+  //       orderBy: { findings_pk_id: 'asc' },
+  //     });
+  //     res.json({ success: true, data: rows });
+  //   }),
+  // );
 
   // form_research_owner
   // GET /api/master/form-research-owner

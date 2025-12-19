@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2025-12-15T09:31:40.123Z",
+  "fetchedAt": "2025-12-19T02:51:28.227Z",
   "key": "users",
   "url": "https://triup.tsri.or.th/service/api/users",
   "data": {
@@ -181,6 +181,13 @@
         "fullname": "รศ.ดร.ศักย์ชิน  บุญถวิล"
       },
       {
+        "user_id": 7196,
+        "email": "krittiya.d@psu.ac.th",
+        "card_id": "39XXXXXXX8814",
+        "default_role_id": "นักวิจัย / หัวหน้าโครงการ / นักวิจัยร่วม",
+        "fullname": "ผศ.ดร.กฤติยา  ดวงมณี"
+      },
+      {
         "user_id": 3869,
         "email": "suriyan.j@psu.ac.th",
         "card_id": "39XXXXXXX3830",
@@ -326,6 +333,13 @@
         "card_id": "19XXXXXXX1038",
         "default_role_id": "นักวิจัย / หัวหน้าโครงการ / นักวิจัยร่วม",
         "fullname": "น.ส.นิซูไรดา  นิมุ"
+      },
+      {
+        "user_id": 7218,
+        "email": "banyen.s@psu.ac.th",
+        "card_id": "39XXXXXXX2715",
+        "default_role_id": "นักวิจัย / หัวหน้าโครงการ / นักวิจัยร่วม",
+        "fullname": "น.ส.บานเย็น  แซ่หลี"
       },
       {
         "user_id": 3636,
@@ -557,6 +571,13 @@
         "card_id": "18XXXXXXX3139",
         "default_role_id": "นักวิจัย / หัวหน้าโครงการ / นักวิจัยร่วม",
         "fullname": "น.ส.ขวัญสุดา  คงทอง"
+      },
+      {
+        "user_id": 7242,
+        "email": "maliwan.gap@gmail.com",
+        "card_id": "38XXXXXXX4013",
+        "default_role_id": "นักวิจัย / หัวหน้าโครงการ / นักวิจัยร่วม",
+        "fullname": "น.ส.มะลิวัลย์  กาพย์เกิด"
       },
       {
         "user_id": 4683,
